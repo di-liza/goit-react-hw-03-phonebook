@@ -14,9 +14,8 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
   background-position: cover;
-  /* overflow: hidden; */
 }
-/* https://images4.alphacoders.com/932/932271.jpg */
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
