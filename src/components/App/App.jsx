@@ -6,12 +6,7 @@ import ContactList from '../ContactList';
 import Filter from '../Filter';
 import Notification from '../Notification';
 
-import {
-  Container,
-  ContactsWrapper,
-  Title,
-  FormWrapper,
-} from './App.styled.js';
+import { Container } from './App.styled.js';
 
 export default class App extends Component {
   state = {
@@ -73,13 +68,13 @@ export default class App extends Component {
     const value = this.getFilteredContacts();
     return (
       <Container>
-        <FormWrapper>
-          <Title>PhoneBook</Title>
+        <div className="form-wrapper">
+          <h2 className="title">PhoneBook</h2>
           <ContactForm addContact={this.addContact} contacts={contacts} />
-        </FormWrapper>
+        </div>
 
-        <ContactsWrapper>
-          <Title>Contacts</Title>
+        <div className="contactsWrapper">
+          <h1 className="title">Contacts</h1>
           <div>
             <Filter name={filter} onChangeInput={this.handleFilterChange} />
             {value.length !== 0 ? (
@@ -91,7 +86,7 @@ export default class App extends Component {
               <Notification text={'No contacts are available.'} />
             )}
           </div>
-        </ContactsWrapper>
+        </div>
       </Container>
     );
   }

@@ -27,22 +27,22 @@ export const Item = styled.li`
     margin-bottom: 0px;
   }
   animation: ${slideIn} 0.3s ease-in-out forwards;
-`;
 
-export const DeleteBtn = styled.button`
-  width: 70px;
-  height: 30px;
-  border: none;
-  outline: none;
-  background: #2f2f2f;
-  color: #fff;
-  font-size: 15px;
-  border-radius: 40px;
-  text-align: center;
-  box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-  :hover {
-    background-color: #080710;
-    color: #ffffff;
+  .delete-btn {
+    width: 70px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background: #2f2f2f;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    :hover {
+      background-color: #080710;
+      color: #ffffff;
+    }
   }
 `;

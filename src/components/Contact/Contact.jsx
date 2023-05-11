@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { Item, DeleteBtn } from './Contact.styled';
+import { Item } from './Contact.styled';
 
 export default function Contact({ name, id, number, handleDeleteBTN }) {
   return (
@@ -9,14 +9,15 @@ export default function Contact({ name, id, number, handleDeleteBTN }) {
         <p>{name}</p>
         <p>{number}</p>
       </div>
-      <DeleteBtn
+      <button
+        className="delete-btn"
         type="button"
         onClick={() => {
           handleDeleteBTN(id);
         }}
       >
         Delete
-      </DeleteBtn>
+      </button>
     </Item>
   );
 }

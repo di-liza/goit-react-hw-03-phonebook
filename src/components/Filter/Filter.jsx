@@ -1,12 +1,17 @@
 import PropTypes from 'prop-types';
 
-import { Input, FilterBox } from './Filter.styled';
+import { FilterBox } from './Filter.styled';
 
 export default function Filter({ name, onChangeInput }) {
   return (
     <FilterBox>
       <p>Find contacts by name</p>
-      <Input value={name} name={name} onChange={onChangeInput} />
+      <input
+        className="styled-input"
+        value={name}
+        name={name}
+        onChange={onChangeInput}
+      />
     </FilterBox>
   );
 }

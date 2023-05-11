@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import PropTypes, { shape } from 'prop-types';
 
-import { Inputbox, Input, Form, Label, AddBtn } from './ContactForm.styled';
+import { Form } from './ContactForm.styled';
 
 export default class ContactForm extends Component {
   state = {
@@ -33,10 +33,13 @@ export default class ContactForm extends Component {
     return (
       <>
         <Form onSubmit={this.handleContactFormSubmit}>
-          <Inputbox>
+          <div className="input-wrapper">
             <div>
-              <Label htmlFor="name">Name</Label>
-              <Input
+              <label className="styled-label" htmlFor="name">
+                Name
+              </label>
+              <input
+                className="styled-input"
                 onChange={this.handleInputName}
                 type="text"
                 name="name"
@@ -47,8 +50,11 @@ export default class ContactForm extends Component {
               />
             </div>
             <div>
-              <Label htmlFor="number">Number</Label>
-              <Input
+              <label className="styled-label" htmlFor="number">
+                Number
+              </label>
+              <input
+                className="styled-input"
                 onChange={this.handleInputTel}
                 type="tel"
                 name="number"
@@ -58,8 +64,10 @@ export default class ContactForm extends Component {
                 required
               />
             </div>
-          </Inputbox>
-          <AddBtn type="submit">Add contact</AddBtn>
+          </div>
+          <button className="addBtn" type="submit">
+            Add contact
+          </button>
         </Form>
       </>
     );
