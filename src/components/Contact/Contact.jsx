@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
 import { Item } from './Contact.styled';
+import { ReactComponent as DeleteIcon } from '../icons/delete.svg';
 
 export default function Contact({ name, id, number, handleDeleteBTN }) {
   return (
@@ -16,7 +17,7 @@ export default function Contact({ name, id, number, handleDeleteBTN }) {
           handleDeleteBTN(id);
         }}
       >
-        Delete
+        <DeleteIcon width={20} height={20} />
       </button>
     </Item>
   );

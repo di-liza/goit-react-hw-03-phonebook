@@ -29,12 +29,14 @@ export const Item = styled.li`
   animation: ${slideIn} 0.3s ease-in-out forwards;
 
   .delete-btn {
-    width: 70px;
+    display: flex;
+    align-items: center;
+    width: 30px;
     height: 30px;
     border: none;
     outline: none;
     background: #2f2f2f;
-    color: #fff;
+    color: #988989;
     font-size: 15px;
     border-radius: 40px;
     text-align: center;
