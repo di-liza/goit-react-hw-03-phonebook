@@ -10,6 +10,14 @@ const slideIn = keyframes`
   }
 `;
 
+// const slideOut = keyframes`
+//   from {
+//     transform: translateX(0);
+//   }
+//   to {
+//     transform: translateX(100%);
+//   }
+// `;
 export const Item = styled.li`
   width: 300px;
   background-color: #100d1039;
