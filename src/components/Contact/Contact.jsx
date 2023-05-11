@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { Item, DeleteBtn } from './Contact.styled';
 
-export function Contact({ name, id, number, handleDeleteBTN }) {
+export default function Contact({ name, id, number, handleDeleteBTN }) {
   return (
     <Item key={id}>
       <div>

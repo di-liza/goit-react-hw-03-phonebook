@@ -1,9 +1,9 @@
 import PropTypes, { shape } from 'prop-types';
 
 import { ListBox } from './ContactList.styled';
-import { Contact } from 'components/Contact/Contact';
+import Contact from 'components/Contact';
 
-export function ContactList({ contacts, handleDeleteBTN }) {
+export default function ContactList({ contacts, handleDeleteBTN }) {
   return (
     <>
       <ListBox>

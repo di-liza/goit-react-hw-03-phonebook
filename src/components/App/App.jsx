@@ -1,10 +1,10 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
 
-import { ContactForm } from '../ContactForm/ContactForm';
-import { ContactList } from '../ContactList/ContactList';
-import { Filter } from '../Filter/Filter';
-import { Notification } from '../Notification/Notification';
+import ContactForm from '../ContactForm';
+import ContactList from '../ContactList';
+import Filter from '../Filter';
+import Notification from '../Notification';
 
 import {
   Container,
@@ -19,14 +19,13 @@ export default class App extends Component {
     filter: '',
   };
 
-  componentDidMount(prevState) {
+  componentDidMount() {
     const updateContacts = JSON.parse(localStorage.getItem('contacts'));
     if (updateContacts) {
       this.setState({ contacts: updateContacts });
     }
   }
   componentDidUpdate(prevProps, prevState) {
-    console.log('componentDidUpdate');
     if (this.state.contacts !== prevState.contacts) {
       localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
     }

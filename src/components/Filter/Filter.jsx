@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { Input, FilterBox } from './Filter.styled';
 
-export function Filter({ name, onChangeInput }) {
+export default function Filter({ name, onChangeInput }) {
   return (
     <FilterBox>
       <p>Find contacts by name</p>

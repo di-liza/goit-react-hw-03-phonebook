@@ -3,7 +3,7 @@ import PropTypes, { shape } from 'prop-types';
 
 import { Inputbox, Input, Form, Label, AddBtn } from './ContactForm.styled';
 
-export class ContactForm extends Component {
+export default class ContactForm extends Component {
   state = {
     name: '',
     number: '',
